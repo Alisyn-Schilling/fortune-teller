@@ -37,8 +37,7 @@ public class FortuneTellerApp {
 
         System.out.println("What is your favorite ROYGBIV color, type HELP if you don't know the colors:");
         String favoriteColor = input.nextLine();
-        //while (favoriteColor.equals("HELP")) {
-        if (favoriteColor.equalsIgnoreCase("help")) {
+        while (favoriteColor.equalsIgnoreCase("help")) {
             System.out.println("ROYGBIV stands for Red Orange Yellow Green Blue Indigo and Violet");
             favoriteColor = input.nextLine();
         }
