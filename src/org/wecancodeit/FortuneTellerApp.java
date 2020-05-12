@@ -26,7 +26,7 @@ public class FortuneTellerApp {
         String lastName = input.nextLine();
         System.out.println("Your last name is " + lastName);
 
-        System.out.println("How is your age:");
+        System.out.println("What is your age:");
         int userAge = input.nextInt();
         System.out.println("Your age is " + userAge);
 
@@ -37,6 +37,11 @@ public class FortuneTellerApp {
 
         System.out.println("What is your favorite ROYGBIV color, type HELP if you don't know the colors:");
         String favoriteColor = input.nextLine();
+        while (favoriteColor.equals("HELP")){
+            System.out.println("Red Orange Yellow Green Blue Indigo and Violet");
+            System.out.println("What is your favorite ROYGBIV color, type HELP if you don't know the colors:");
+            favoriteColor = input.nextLine();
+        }
         System.out.println("Your favorite color is " + favoriteColor);
 
         System.out.println("How many siblings do you have:");
